@@ -1,5 +1,5 @@
 ---
-const title = "Professional Services | Astro Akash SH";
+const title = "Akash Astrologic | Vedic Strategy & Timing";
 ---
 <html lang="en">
 <head>
@@ -11,62 +11,98 @@ const title = "Professional Services | Astro Akash SH";
         :root { --gold: #d4af37; --dark: #0b0d17; }
         body { 
             font-family: 'Inter', sans-serif; color: #fff; margin: 0; 
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1506318137071-a8e063b4bc04?auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4f5?auto=format&fit=crop&w=1600&q=80');
             background-size: cover; background-attachment: fixed; line-height: 1.6;
         }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        nav { margin-bottom: 30px; }
-        nav a { color: var(--gold); text-decoration: none; font-weight: bold; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
         
-        h1 { color: var(--gold); text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
-        
-        .service-card { 
-            background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); 
-            padding: 30px; border-radius: 20px; border: 1px solid rgba(212, 175, 55, 0.2); 
-            margin-bottom: 25px; transition: 0.3s;
+        /* Nav */
+        nav { display: flex; justify-content: center; gap: 25px; padding: 25px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+        nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+
+        /* Header */
+        header { text-align: center; padding: 50px 0; }
+        .logo-box { 
+            width: 85px; height: 85px; background: var(--gold); border-radius: 50%; 
+            margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; 
+            font-weight: bold; font-size: 1.6rem; color: #000; border: 4px solid #fff;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
         }
-        .service-card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .service-card i { color: var(--gold); font-size: 1.5rem; margin-bottom: 15px; }
-        h2 { margin-top: 0; color: #fff; }
-        
-        .cta-box { text-align: center; margin-top: 50px; padding: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
-        .btn-wa { background: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; }
+        h1 { font-size: 3rem; margin: 10px 0; letter-spacing: 1px; }
+
+        /* Buttons */
+        .btn-grid { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 30px 0; }
+        .btn { padding: 12px 22px; border-radius: 50px; text-decoration: none; font-weight: bold; color: #fff; display: flex; align-items: center; gap: 10px; transition: 0.3s; font-size: 0.9rem; }
+        .btn-call { background: #2ecc71; } 
+        .btn-wa { background: #25D366; } 
+        .btn-ig { background: #E1306C; } 
+        .btn-as { background: #f39c12; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+
+        /* Pricing Section */
+        .price-container { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 40px 0; }
+        .price-card { background: rgba(0,0,0,0.6); padding: 35px; border-radius: 25px; border: 1px solid var(--gold); }
+        .price-item { display: flex; justify-content: space-between; margin: 15px 0; font-size: 1.15rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+
+        /* Payment Section */
+        .payment-box { background: #fff; color: #000; padding: 45px; border-radius: 35px; text-align: center; margin-top: 50px; }
+        .qr-img { width: 240px; border-radius: 15px; margin: 20px 0; border: 2px solid #f0f0f0; }
+        .upi-id { font-weight: 800; font-size: 1.3rem; color: #1a1a2e; background: #f0f0f0; padding: 12px 25px; border-radius: 12px; display: inline-block; border: 2px dashed var(--gold); }
+
+        @media (max-width: 700px) { .price-container { grid-template-columns: 1fr; } h1 { font-size: 2.2rem; } }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <nav><a href="/"><i class="fas fa-arrow-left"></i> Home</a></nav>
-        
-        <h1>Expert Services</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">My Journey</a>
+            <a href="/services">Services</a>
+        </nav>
 
-        <div class="service-card">
-            <i class="fas fa-chart-line"></i>
-            <h2>Career & Business Timing</h2>
-            <p>Stop planting seeds in winter. I analyze your Dashas to find the exact window for your next big move, job change, or business launch.</p>
+        <header>
+            <div class="logo-box">A-SH</div>
+            <h1>Akash Astrologic</h1>
+            <p style="color: var(--gold); font-weight: bold; font-size: 1.1rem;">Logic to Light | Vedic Strategist</p>
+            
+            <div class="btn-grid">
+                <a href="tel:+918580672809" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="https://wa.me/918580672809" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://varta.astrosage.com/astrologer/akashastrop0988?prtnr_id=" class="btn btn-as"><i class="fas fa-certificate"></i> AstroSage</a>
+                <a href="https://www.instagram.com/astro_akash_sh?igsh=cnF4Zm51bTZ4eWox" class="btn btn-ig"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </header>
+
+        <h2 style="text-align: center; color: var(--gold); text-transform: uppercase; letter-spacing: 2px;">Consultation Plans</h2>
+        <div class="price-container">
+            <div class="price-card">
+                <h3 style="color: var(--gold);"><i class="fas fa-user-graduate"></i> Students</h3>
+                <div class="price-item"><span>1 Question</span> <span>₹101</span></div>
+                <div class="price-item"><span>2 Questions</span> <span>₹201</span></div>
+                <div class="price-item"><span>Full Analysis</span> <span>₹501</span></div>
+            </div>
+            <div class="price-card">
+                <h3 style="color: var(--gold);"><i class="fas fa-briefcase"></i> Adults</h3>
+                <div class="price-item"><span>1 Question</span> <span>₹301</span></div>
+                <div class="price-item"><span>2 Questions</span> <span>₹601</span></div>
+                <div class="price-item"><span>Full Analysis</span> <span>₹1501</span></div>
+            </div>
         </div>
 
-        <div class="service-card">
-            <i class="fas fa-heart"></i>
-            <h2>Relationship Alignment</h2>
-            <p>Vedic compatibility (Gun Milan) updated for the modern world. Understand the unseen patterns in your connections.</p>
+        <div class="payment-box">
+            <h3><i class="fas fa-qrcode"></i> Secure Payment</h3>
+            <p>Scan the QR code to book your session instantly</p>
+            <img src="/images/qr.png" class="qr-img" alt="UPI QR Code" />
+            <br/>
+            <div class="upi-id">aakashsharda1850@oksbi</div>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 15px;">*Kindly send the screenshot on WhatsApp after payment for confirmation.</p>
         </div>
 
-        <div class="service-card">
-            <i class="fas fa-graduation-cap"></i>
-            <h2>Student Strategy</h2>
-            <p>Specialized guidance for academic success and competitive exams. Align your effort with your cosmic map.</p>
-        </div>
-
-        <div class="service-card">
-            <i class="fas fa-gem"></i>
-            <h2>Practical Remedies</h2>
-            <p>No complex rituals. I provide high-impact, practical remedies that fit into a modern, fast-paced lifestyle.</p>
-        </div>
-
-        <div class="cta-box">
-            <p>All consultations are strictly confidential.</p>
-            <a href="https://wa.me/918580672809" class="btn-wa"><i class="fab fa-whatsapp"></i> Book Your Session</a>
-        </div>
+        <footer style="text-align: center; padding: 60px 0; color: var(--gold); opacity: 0.6; font-size: 0.8rem;">
+            <p>&copy; 2026 Akash Astrologic | Decoding Patterns, Creating Success.</p>
+        </footer>
     </div>
+
 </body>
 </html>
