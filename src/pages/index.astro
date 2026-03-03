@@ -1,19 +1,64 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
+const title = "Astro Akash SH | Professional Astrologer";
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #2d3436; max-width: 900px; margin: 0 auto; padding: 20px; background: #ffffff; }
+        header { text-align: center; padding: 60px 0; border-bottom: 1px solid #eee; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #1a1a1a; letter-spacing: -1px; }
+        .philosophy-box { background: #f9f9f9; padding: 30px; border-left: 4px solid #d4af37; margin: 40px 0; font-style: italic; font-size: 1.2rem; }
+        section { padding: 40px 0; }
+        h2 { color: #1a1a1a; font-size: 1.8rem; margin-bottom: 20px; }
+        .contact-grid { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px; }
+        .btn { display: inline-flex; align-items: center; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 600; transition: 0.3s; }
+        .btn-wa { background: #25D366; color: white; }
+        .btn-ig { background: #E1306C; color: white; }
+        .btn-as { background: #1a1a1a; color: white; }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
+        footer { margin-top: 60px; padding: 40px 0; border-top: 1px solid #eee; text-align: center; font-size: 0.9rem; color: #636e72; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Astro Akash SH</h1>
+        <p>Vedic Wisdom meets Modern Strategy</p>
+        
+        <div class="contact-grid">
+            <a href="https://wa.me/918580672809" class="btn btn-wa">WhatsApp Consultation</a>
+            <a href="https://www.instagram.com/astro_akash_sh?igsh=cnF4Zm51bTZ4eWox" class="btn btn-ig">Follow on Instagram</a>
+            <a href="https://www.astrosage.com" class="btn btn-as">AstroSage Profile</a>
+        </div>
+    </header>
+
+    <div class="philosophy-box">
+        "I don't believe the stars force you into a destiny. I believe astrology is a map, not a prison. If you know when the market—the planets—is moving, you can make better trades with your time and energy."
+    </div>
+
+    <section>
+        <h2>The Story: From Logic to Light</h2>
+        <p>My practice started with one question: <strong>Why do some people work 10x harder but get 10x less?</strong></p>
+        <p>While the world looked at hard work alone, I looked at the unseen patterns. I realized that timing is the ultimate "unfair advantage" in life. Today, I serve as a bridge between ancient Vedic wisdom and the fast-paced needs of the modern world.</p>
+    </section>
+
+    <section>
+        <h2>Why Consult with Akash?</h2>
+        <ul>
+            <li><strong>Precision-First:</strong> Detailed Dasha and Transit analysis.</li>
+            <li><strong>Practical Remedies:</strong> Solutions that fit your modern lifestyle.</li>
+            <li><strong>Strategic Guidance:</strong> Preparing you for future opportunities.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Astro Akash SH. All rights reserved.</p>
+        <p>Expert Astrologer on AstroSage</p>
+    </footer>
+
+</body>
+</html>
