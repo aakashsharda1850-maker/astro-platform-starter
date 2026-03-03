@@ -1,4 +1,56 @@
+[4:25 pm, 03/03/2026] aakashsharda1850: ---
+const title = "Expert Services | Akash Astrologic";
 ---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; }
+        body { 
+            font-family: 'Inter', sans-serif; color: #fff; margin: 0; 
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1506318137071-a8e063b4bc04?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover; background-attachment: fixed; line-height: 1.6;
+        }
+        .container { max-width: 900px; ma…
+[4:26 pm, 03/03/2026] aakashsharda1850: ---
+const title = "Client Reviews | Akash Astrologic";
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; }
+        body { 
+            font-family: 'Inter', sans-serif; color: #fff; margin: 0; 
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover; background-attachment: fixed; line-height: 1.6;
+        }
+        .container { max-width: 900px; mar…
+[4:27 pm, 03/03/2026] aakashsharda1850: ---
+const title = "Contact | Akash Astrologic";
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; }
+        body { 
+            font-family: 'Inter', sans-serif; color: #fff; margin: 0; 
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover; background-attachment: fixed; line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 …
+[4:39 pm, 03/03/2026] aakashsharda1850: akashastrologic.netlify.app
+[4:41 pm, 03/03/2026] aakashsharda1850: ---
 const title = "Expert Services | Akash Astrologic";
 ---
 <html lang="en">
@@ -16,25 +68,25 @@ const title = "Expert Services | Akash Astrologic";
         }
         .container { max-width: 900px; margin: 0 auto; padding: 20px; }
         
-        /* Fixed 5-Page Nav */
         nav { display: flex; justify-content: center; gap: 20px; padding: 25px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); margin-bottom: 40px; flex-wrap: wrap; }
         nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
-        nav a:hover { border-bottom: 1px solid var(--gold); }
         
         h1 { color: var(--gold); text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
         
+        /* Clickable Service Cards */
+        .service-link { text-decoration: none; color: inherit; display: block; margin-bottom: 25px; }
         .service-card { 
             background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); 
-            padding: 30px; border-radius: 20px; border: 1px solid rgba(212, 175, 55, 0.2); 
-            margin-bottom: 25px; transition: 0.3s;
+            padding: 35px; border-radius: 25px; border: 1px solid rgba(212, 175, 55, 0.2); 
+            transition: 0.3s; cursor: pointer;
         }
-        .service-card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .service-card i { color: var(--gold); font-size: 1.5rem; margin-bottom: 15px; display: block; }
-        h2 { margin-top: 0; color: var(--gold); font-size: 1.5rem; }
-        p { color: #eee; font-size: 1.05rem; }
+        .service-card:hover { border-color: var(--gold); transform: translateY(-5px); background: rgba(212, 175, 55, 0.05); }
+        .service-card i { color: var(--gold); font-size: 1.8rem; margin-bottom: 20px; display: block; }
+        h2 { margin-top: 0; color: var(--gold); font-size: 1.6rem; }
+        p { color: #eee; font-size: 1.1rem; margin-bottom: 0; }
+        .click-hint { font-size: 0.8rem; color: var(--gold); margin-top: 15px; display: block; text-transform: uppercase; font-weight: bold; opacity: 0.7; }
         
         .cta-box { text-align: center; margin-top: 50px; padding: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
-        .btn-wa { background: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; }
     </style>
 </head>
 <body>
@@ -47,35 +99,46 @@ const title = "Expert Services | Akash Astrologic";
             <a href="/contact">Contact</a>
         </nav>
         
-        <h1>Expert Strategy</h1>
+        <h1>Premium Strategy</h1>
 
-        <div class="service-card">
-            <i class="fas fa-chart-line"></i>
-            <h2>Career & Business Timing</h2>
-            <p>I analyze ur Dashas to find the exact window for ur next big move, job change, or business launch.</p>
-        </div>
+        <a href="https://wa.me/918580672809?text=Hi%20Akash,%20I'm%20interested%20in%20Career%20and%20Business%20Timing." class="service-link">
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h2>Career & Business Timing</h2>
+                <p>Hard work alone isn't enough; you need cosmic momentum. I analyze your current Mahadasha and Antardasha to pinpoint the exact windows for job changes, promotions, or starting a new venture. Stop guessing and start moving when the universe is in your favor.</p>
+                <span class="click-hint">Click to book on WhatsApp</span>
+            </div>
+        </a>
 
-        <div class="service-card">
-            <i class="fas fa-heart"></i>
-            <h2>Relationship Alignment</h2>
-            <p>Vedic compatibility updated for the modern world. Understand the unseen patterns in ur connections.</p>
-        </div>
+        <a href="https://wa.me/918580672809?text=Hi%20Akash,%20I'm%20interested%20in%20Relationship%20Alignment." class="service-link">
+            <div class="service-card">
+                <i class="fas fa-heart"></i>
+                <h2>Relationship Alignment</h2>
+                <p>Relationships are about more than just matching stars—they are about understanding energy patterns. I provide deep insights into your connection, helping you navigate conflicts and strengthen bonds through modern Vedic compatibility. Align your heart with logic to find lasting peace.</p>
+                <span class="click-hint">Click to book on WhatsApp</span>
+            </div>
+        </a>
 
-        <div class="service-card">
-            <i class="fas fa-graduation-cap"></i>
-            <h2>Student Strategy</h2>
-            <p>Specialized guidance for academic success and competitive exams. Align ur hard work with ur cosmic map.</p>
-        </div>
+        <a href="https://wa.me/918580672809?text=Hi%20Akash,%20I'm%20interested%20in%20Student%20Strategy." class="service-link">
+            <div class="service-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>Student Strategy</h2>
+                <p>Designed for competitive exam aspirants and students facing academic hurdles. We identify your strongest periods for focus and success, ensuring your preparation matches your internal clock. Gain the clarity needed to clear exams and choose the right career path early.</p>
+                <span class="click-hint">Click to book on WhatsApp</span>
+            </div>
+        </a>
 
-        <div class="service-card">
-            <i class="fas fa-gem"></i>
-            <h2>Practical Remedies</h2>
-            <p>No complex rituals. I provide high-impact, practical remedies that fit into a modern lifestyle.</p>
-        </div>
+        <a href="https://wa.me/918580672809?text=Hi%20Akash,%20I'm%20interested%20in%20Practical%20Remedies." class="service-link">
+            <div class="service-card">
+                <i class="fas fa-gem"></i>
+                <h2>Practical Remedies</h2>
+                <p>No expensive rituals or complex ceremonies that don't fit your life. I offer high-impact, practical remedies—like lifestyle shifts and simple daily habits—that are scientifically aligned with Vedic principles. Transform your energy without disrupting your modern routine.</p>
+                <span class="click-hint">Click to book on WhatsApp</span>
+            </div>
+        </a>
 
         <div class="cta-box">
-            <p style="margin-bottom: 20px;">All consultations are strictly confidential.</p>
-            <a href="https://wa.me/918580672809" class="btn-wa"><i class="fab fa-whatsapp"></i> Book Your Session</a>
+            <p>Your data is always 100% confidential.</p>
         </div>
     </div>
 </body>
