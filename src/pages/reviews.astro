@@ -1,0 +1,86 @@
+---
+const title = "Client Reviews | Akash Astrologic";
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; }
+        body { 
+            font-family: 'Inter', sans-serif; color: #fff; margin: 0; 
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover; background-attachment: fixed; line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* Matching Nav */
+        nav { display: flex; justify-content: center; gap: 25px; padding: 25px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); margin-bottom: 40px; }
+        nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        
+        h1 { color: var(--gold); text-align: center; font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #ccc; margin-bottom: 40px; font-style: italic; }
+        
+        .review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .review-card { 
+            background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); 
+            padding: 25px; border-radius: 20px; border: 1px solid rgba(212, 175, 55, 0.1); 
+            position: relative;
+        }
+        .stars { color: var(--gold); margin-bottom: 10px; font-size: 0.9rem; }
+        .review-text { font-size: 0.95rem; line-height: 1.5; color: #eee; margin-bottom: 15px; }
+        .client-name { font-weight: bold; color: var(--gold); font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; display: block; }
+
+        .cta-box { text-align: center; margin-top: 50px; padding: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .btn-wa { background: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; }
+
+        @media (max-width: 650px) { .review-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">Journey</a>
+            <a href="/services">Services</a>
+            <a href="/reviews">Reviews</a>
+        </nav>
+        
+        <h1>What Clients Say</h1>
+        <p class="subtitle">Real feedback from those who found their "perfect timing".</p>
+
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"I was confused about my career for 2 years. Akash's analysis of my Dashas was spot on. I switched jobs exactly when he suggested and it's been great!"</p>
+                <span class="client-name">- Rahul M., Bangalore</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"The student strategy session helped me clear my exams with less stress. He explains things with logic, not just rituals."</p>
+                <span class="client-name">- Priya S., Delhi</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Very practical remedies. No expensive stones or long pujas. Highly recommended for modern professionals."</p>
+                <span class="client-name">- Sameer K., Mumbai</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Consulted him via AstroSage first, then here. His 'logic to light' approach really works. Best experience!"</p>
+                <span class="client-name">- Anjali V., USA</span>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <p style="margin-bottom: 20px;">Ready to be my next success story?</p>
+            <a href="https://wa.me/918580672809" class="btn-wa"><i class="fab fa-whatsapp"></i> Book Your Analysis</a>
+        </div>
+    </div>
+</body>
+</html>
