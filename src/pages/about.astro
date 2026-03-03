@@ -1,5 +1,5 @@
 ---
-const title = "My Story | Akash Astrologic";
+const title = "My Journey | Akash Astrologic";
 ---
 <html lang="en">
 <head>
@@ -16,9 +16,10 @@ const title = "My Story | Akash Astrologic";
         }
         .container { max-width: 850px; margin: 0 auto; padding: 20px; }
         
-        /* Matching Nav */
-        nav { display: flex; justify-content: center; gap: 25px; padding: 25px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); margin-bottom: 40px; }
-        nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        /* Fixed 5-Page Nav */
+        nav { display: flex; justify-content: center; gap: 20px; padding: 25px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); margin-bottom: 40px; flex-wrap: wrap; }
+        nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        nav a:hover { border-bottom: 1px solid var(--gold); }
         
         .story-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); padding: 45px; border-radius: 35px; border: 1px solid rgba(212, 175, 55, 0.2); }
         h1 { color: var(--gold); font-size: 2.5rem; margin-bottom: 25px; border-bottom: 2px solid var(--gold); padding-bottom: 10px; display: inline-block; }
@@ -34,12 +35,14 @@ const title = "My Story | Akash Astrologic";
     <div class="container">
         <nav>
             <a href="/">Home</a>
-            <a href="/about">My Journey</a>
+            <a href="/about">Journey</a>
             <a href="/services">Services</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/contact">Contact</a>
         </nav>
         
         <div class="story-card">
-            <h1>Logic to Light</h1>
+            <h1>The Journey</h1>
             
             <p>I didn't start in a temple. It started with a simple question: <span class="highlight">"Why do some people work 10x harder but get 10x less?"</span></p>
 
@@ -47,11 +50,9 @@ const title = "My Story | Akash Astrologic";
                 "I realized that hard work is only half the equation. The other half is timing."
             </div>
 
-            <p>While the world was looking at logic and effort alone, i began to study the <span class="highlight">unseen patterns</span> of the universe. After years of analyzing thousands of charts and serving as an expert on <strong>AstroSage</strong>, i decoded the "Cosmic Blueprint".</p>
+            <p>While the world was looking at logic alone, i began to study the <span class="highlight">unseen patterns</span> of the universe. After years of analyzing thousands of charts and serving as an expert on <strong>AstroSage</strong>, i decoded the "Cosmic Blueprint".</p>
 
-            <p>I saw that many people were trying to "plant seeds in winter"—giving their best effort at the absolute worst time. I decided to build a practice that stops the guesswork.</p>
-
-            <p>Today, <span class="highlight">Akash Astrologic</span> serves as a bridge between ancient wisdom and the fast-paced needs of the modern world. My mission is to give u the ultimate advantage: <span class="highlight">Perfect Timing.</span></p>
+            <p>Today, <span class="highlight">Akash Astrologic</span> serves as a bridge between ancient wisdom and the modern strategist. My mission is to give u the ultimate advantage: <span class="highlight">Logic to Light.</span></p>
         </div>
 
         <div class="footer-cta">
