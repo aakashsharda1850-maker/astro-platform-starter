@@ -16,9 +16,10 @@ const title = "Akash Astrologic | Vedic Strategy & Timing";
         }
         .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
         
-        /* Nav */
-        nav { display: flex; justify-content: center; gap: 25px; padding: 25px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+        /* Nav Section */
+        nav { display: flex; justify-content: center; gap: 20px; padding: 25px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); flex-wrap: wrap; }
         nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        nav a:hover { border-bottom: 1px solid var(--gold); }
 
         /* Header */
         header { text-align: center; padding: 50px 0; }
@@ -30,7 +31,7 @@ const title = "Akash Astrologic | Vedic Strategy & Timing";
         }
         h1 { font-size: 3rem; margin: 10px 0; letter-spacing: 1px; }
 
-        /* Buttons */
+        /* Action Buttons */
         .btn-grid { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 30px 0; }
         .btn { padding: 12px 22px; border-radius: 50px; text-decoration: none; font-weight: bold; color: #fff; display: flex; align-items: center; gap: 10px; transition: 0.3s; font-size: 0.9rem; }
         .btn-call { background: #2ecc71; } 
@@ -39,7 +40,7 @@ const title = "Akash Astrologic | Vedic Strategy & Timing";
         .btn-as { background: #f39c12; }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
 
-        /* Pricing Section */
+        /* Consultation Plans */
         .price-container { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 40px 0; }
         .price-card { background: rgba(0,0,0,0.6); padding: 35px; border-radius: 25px; border: 1px solid var(--gold); }
         .price-item { display: flex; justify-content: space-between; margin: 15px 0; font-size: 1.15rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
@@ -57,8 +58,10 @@ const title = "Akash Astrologic | Vedic Strategy & Timing";
     <div class="container">
         <nav>
             <a href="/">Home</a>
-            <a href="/about">My Journey</a>
+            <a href="/about">Journey</a>
             <a href="/services">Services</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/contact">Contact</a>
         </nav>
 
         <header>
@@ -92,15 +95,15 @@ const title = "Akash Astrologic | Vedic Strategy & Timing";
 
         <div class="payment-box">
             <h3><i class="fas fa-qrcode"></i> Secure Payment</h3>
-            <p>Scan the QR code to book your session instantly</p>
+            <p>Scan to book your session instantly</p>
             <img src="/images/qr.png" class="qr-img" alt="UPI QR Code" />
             <br/>
             <div class="upi-id">aakashsharda1850@oksbi</div>
-            <p style="font-size: 0.85rem; color: #666; margin-top: 15px;">*Kindly send the screenshot on WhatsApp after payment for confirmation.</p>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 15px;">*Kindly send the screenshot on WhatsApp after payment.</p>
         </div>
 
         <footer style="text-align: center; padding: 60px 0; color: var(--gold); opacity: 0.6; font-size: 0.8rem;">
-            <p>&copy; 2026 Akash Astrologic | Decoding Patterns, Creating Success.</p>
+            <p>&copy; 2026 Akash Astrologic | From Logic to Light.</p>
         </footer>
     </div>
 
