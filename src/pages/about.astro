@@ -1,5 +1,5 @@
 ---
-const title = "My Journey | Astro Akash SH";
+const title = "My Journey | Akash Astrologic";
 ---
 <html lang="en">
 <head>
@@ -8,49 +8,26 @@ const title = "My Journey | Astro Akash SH";
     <title>{title}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --gold: #d4af37; --dark: #0b0d17; }
-        body { 
-            font-family: 'Inter', sans-serif; color: #fff; margin: 0; 
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover; background-attachment: fixed; line-height: 1.8;
-        }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        nav { margin-bottom: 40px; }
-        nav a { color: var(--gold); text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 8px; }
-        
-        h1 { color: var(--gold); font-size: 2.5rem; margin-bottom: 20px; border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
+        :root { --gold: #d4af37; }
+        body { font-family: 'Inter', sans-serif; color: #fff; margin: 0; background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-attachment: fixed; line-height: 1.8; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        nav { display: flex; justify-content: center; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(212,175,55,0.2); margin-bottom: 30px; }
+        nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        h1 { color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
         .story-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 40px; border-radius: 30px; border: 1px solid rgba(212, 175, 55, 0.2); }
-        
-        .highlight { color: var(--gold); font-weight: bold; }
-        .quote-box { border-left: 4px solid var(--gold); padding-left: 20px; margin: 30px 0; font-style: italic; font-size: 1.2rem; background: rgba(212, 175, 55, 0.1); padding: 20px; border-radius: 0 20px 20px 0; }
-        
-        .footer-links { margin-top: 50px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; }
-        .btn-wa { color: #25D366; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
-        <nav><a href="/"><i class="fas fa-arrow-left"></i> Back to Home</a></nav>
-        
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">Journey</a>
+            <a href="/services">Services</a>
+        </nav>
         <div class="story-card">
-            <h1>The Story: Logic to Light</h1>
-            
-            <p>I didn't start in a temple or a library. It started with a simple, burning question: <span class="highlight">"Why do some people work 10x harder but get 10x less?"</span></p>
-
-            <div class="quote-box">
-                "I realized that hard work is only half the equation. The other half is timing."
-            </div>
-
-            <p>While the world was looking at logic and effort alone, I began to study the <span class="highlight">unseen patterns</span> of the universe. After years of analyzing thousands of charts and serving as an expert on <strong>AstroSage</strong>, I decoded the "Cosmic Blueprint".</p>
-
-            <p>I saw that many people were trying to "plant seeds in winter"—giving their best effort at the absolute worst time. I decided to build a practice that stops the guesswork.</p>
-
-            <p>Today, <span class="highlight">Astro Akash SH</span> serves as a bridge between the ancient wisdom of the rishis and the fast-paced needs of the modern world. My mission is to give you the ultimate "unfair advantage": <span class="highlight">Perfect Timing.</span></p>
-        </div>
-
-        <div class="footer-links">
-            <p>Ready to align with your destiny?</p>
-            <a href="https://wa.me/918580672809" class="btn-wa"><i class="fab fa-whatsapp"></i> Message me on WhatsApp</a>
+            <h1>The Journey: Logic to Light</h1>
+            <p>I realized that hard work is only half the equation. The other half is timing.</p>
+            <p>Today, <strong>Akash Astrologic</strong> serves as a bridge between ancient wisdom and modern strategy.</p>
         </div>
     </div>
 </body>
